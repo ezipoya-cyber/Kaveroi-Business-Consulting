@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgba(0,103,71,0.9); /* PNG green */
+    background-color: rgba(0,103,71,0.9);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -46,9 +46,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section with traditional PNG background */
+/* Hero Section */
 .hero {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/3/31/Trobriand_Islands_people_2.jpg') no-repeat center center/cover;
+    background: url('img1.jpg') no-repeat center center/cover;
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -58,11 +58,8 @@ nav a:hover {
 .hero::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* dark overlay for readability */
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .hero .hero-content {
@@ -73,7 +70,7 @@ nav a:hover {
 .hero .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d21034; /* PNG red */
+    background-color: #d21034;
     color: white;
     border: none;
     cursor: pointer;
@@ -102,22 +99,10 @@ section h2 {
     margin: 0 auto;
 }
 
-/* Services Grid with traditional PNG background */
+/* Services Grid */
 #services {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/8/81/Trobriand_Islands_people_2.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 60px 20px;
-    position: relative;
-}
-
-#services::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.6); /* dark overlay */
+    background-color: #f5f5f5;
+    color: #000;
 }
 
 .services-grid {
@@ -125,18 +110,15 @@ section h2 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    position: relative;
-    z-index: 1;
 }
 
 .service-card {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     width: 250px;
     border-radius: 8px;
     transition: transform 0.3s;
     backdrop-filter: blur(5px);
-    color: #000;
 }
 
 .service-card img {
@@ -151,7 +133,7 @@ section h2 {
 
 /* PNG Feature Section */
 .png-feature {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/4/41/PNG_village_traditional_huts.jpg') no-repeat center center/cover;
+    background: url('img2.jpg') no-repeat center center/cover;
     color: white;
     padding: 60px 20px;
     position: relative;
@@ -160,10 +142,7 @@ section h2 {
 .png-feature::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top:0; left:0; right:0; bottom:0;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -181,7 +160,7 @@ section h2 {
 }
 
 .png-images img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);

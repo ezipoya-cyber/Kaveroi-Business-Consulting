@@ -7,42 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header / Navigation -->
     <header>
-        <div class="container">
-            <h1>Kaveroi Business Consulting</h1>
-            <p>Connecting You to Buisness Opportunities with Ease</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Kaveroi Business Consulting</h1>
+        <p>Bridging People & Government Institutions in PNG</p>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#png-feature">PNG Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h2>Helping Your Business Thrive in Papua New Guinea</h2>
-            <p>Operational since 2022 | Registered in 2025</p>
-            <a href="#services" class="btn">Explore Our Services</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Kaveroi Business Consulting, based in Port Moresby, helps ordinary citizens navigate business registration and tax processes with the Investment Promotion Authority (IPA) and the Internal Revenue Commission (IRC). We simplify bureaucracy and ensure smooth compliance for your business growth.</p>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Kaveroi Business Consulting</h2>
+            <p>Operational since 2022 | Registered 2025</p>
+            <a href="#services" class="btn">Learn More</a>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/document.png" alt="Business Registration">
+                <h3>Business Registration</h3>
+                <p>Assisting businesses with IPA registration and renewals.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/tax.png" alt="Tax Assistance">
+                <h3>Tax Assistance</h3>
+                <p>Help with IRC tax duties and related forms.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/government-building.png" alt="Government Liaison">
+                <h3>Government Liaison</h3>
+                <p>Bridge between individuals and PNG government institutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PNG Feature Section -->
+    <section class="png-feature" id="png-feature">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://cdn-
+            <h2>Experience Papua New Guinea</h2>
+            <div class="png-images">
+                <!-- JS will load images here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+            <div class="success-message"></div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kaveroi Business Consulting. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

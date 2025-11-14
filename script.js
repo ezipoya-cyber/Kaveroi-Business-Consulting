@@ -9,17 +9,12 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 // PNG Feature Section Slideshow
-const pngImages = [
-    'https://upload.wikimedia.org/wikipedia/commons/4/41/PNG_village_traditional_huts.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/3/31/Trobriand_Islands_people_2.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/f/f0/PNG_dance_traditional.jpg'
-];
-
+const pngImages = ['img1.jpg', 'img2.jpg', 'img3.jpeg'];
 let currentImageIndex = 0;
 const pngImageContainer = document.querySelector('.png-images');
 
 function showPNGImage(index) {
-    pngImageContainer.innerHTML = `<img src="${pngImages[index]}" alt="Papua New Guinea cultural image">`;
+    pngImageContainer.innerHTML = `<img src="${pngImages[index]}" alt="PNG Cultural Image">`;
 }
 
 function nextPNGImage() {
@@ -43,4 +38,10 @@ form.addEventListener('submit', function(e) {
     const message = form.querySelector('textarea[name="message"]').value.trim();
 
     if(name === '' || email === '' || message === '') {
-        alert('Please fill in all fields!
+        alert('Please fill in all fields!');
+        return;
+    }
+
+    form.reset();
+    successMessage.textContent = 'Thank you! Your message has been sent.';
+});
