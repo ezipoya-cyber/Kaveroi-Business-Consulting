@@ -8,24 +8,6 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// PNG Feature Section Slideshow
-const pngImages = ['img1.jpg', 'img2.jpg', 'img3.jpeg'];
-let currentImageIndex = 0;
-const pngImageContainer = document.querySelector('.png-images');
-
-function showPNGImage(index) {
-    pngImageContainer.innerHTML = `<img src="${pngImages[index]}" alt="PNG Cultural Image">`;
-}
-
-function nextPNGImage() {
-    currentImageIndex = (currentImageIndex + 1) % pngImages.length;
-    showPNGImage(currentImageIndex);
-}
-
-// Initialize slideshow
-showPNGImage(currentImageIndex);
-setInterval(nextPNGImage, 5000); // change every 5 seconds
-
 // Contact form validation
 const form = document.querySelector('form');
 const successMessage = document.querySelector('.success-message');
